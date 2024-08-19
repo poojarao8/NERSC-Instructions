@@ -1,4 +1,4 @@
-# NERSC-Instructions for running CUDA-Q container using shifter
+# Instructions for running CUDA-Q container using shifter
 
 1. **Login**
    ```bash
