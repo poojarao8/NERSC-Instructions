@@ -14,7 +14,7 @@
    **To run interactively:**
    ```bash
    salloc -N 1 --gpus-per-task=1 --ntasks-per-node=1 --gpu-bind=none -t 30 --qos=interactive -A <ACCOUNT> -C gpu --image=docker:nvcr.io/nvidia/nightly/cuda-quantum:latest --module=cuda-mpich
-   srun -N 1 -n 1 shifter python sample_file.py
+   srun -N 1 -n 1 --mpi=pmix shifter python3 sample_file.py
    ```
    
    **To run with script:**
